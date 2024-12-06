@@ -25,8 +25,6 @@ interface CyclesContextType {
   interruptCurrentCycle: () => void
 }
 
-
-
 export function CyclesContextProvider({ children }: CyclesContextProviderProps) {
 
   const [cyclesState, dispatch] = useReducer(cyclesReducer, {
